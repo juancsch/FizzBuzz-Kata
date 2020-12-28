@@ -1,0 +1,16 @@
+{
+    "name": "FizzBuzz",
+    "version": "2.0.0",
+    "description": "Kata fizzbuzz",
+    "main": "",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "test": "jest",
+        "tdd": "jest --watch"
+    },
+    "devDependencies": {
+        "jest": "^26.2.2",
+        "jest-extended": "^0.11.5"
+    }
+}
