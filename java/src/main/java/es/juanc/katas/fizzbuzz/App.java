@@ -2,6 +2,8 @@ package es.juanc.katas.fizzbuzz;
 
 import java.util.logging.Logger;
 
+import io.vavr.collection.List;
+
 // @Log
 public class App {
 
@@ -15,6 +17,11 @@ public class App {
 
     public static void main(String[] args) {
 
-        log.info("Hello world!!");
+        var fb = new FizzBuzz();
+
+        List.range(1, 6)
+            .forEach(n -> log.info(
+                    fb.process(Number.of(n))
+            ));
     }
 }
