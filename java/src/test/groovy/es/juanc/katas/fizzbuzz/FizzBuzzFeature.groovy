@@ -1,5 +1,6 @@
 package es.juanc.katas.fizzbuzz
 
+
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -21,7 +21,7 @@ public class App {
 
         List.range(1, 6)
             .forEach(n -> log.info(
-                    fb.process(Number.of(n))
+                    fb.process(FBNumber.of(n))
             ));
     }
 }
