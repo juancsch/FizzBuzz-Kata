@@ -8,11 +8,11 @@ import static io.vavr.API.Match;
 
 public class FizzBuzzPatternMatching {
 
-    private static final Predicate<Number> multiple3 = n -> n.value % 3 == 0;
-    private static final Predicate<Number> multiple5 = n -> n.value % 5 == 0;
-    private static final Predicate<Number> multiple35 = multiple3.and(multiple5);
+    private static final Predicate<FBNumber> multiple3 = n -> n.value % 3 == 0;
+    private static final Predicate<FBNumber> multiple5 = n -> n.value % 5 == 0;
+    private static final Predicate<FBNumber> multiple35 = multiple3.and(multiple5);
 
-    public String process(Number number) {
+    public String process(FBNumber number) {
 
         return Match(number).of(
                 Case($(multiple35), "fizzbuzz"),
